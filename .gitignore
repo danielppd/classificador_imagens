@@ -1,0 +1,45 @@
+# Arquivo .gitignore para o projeto de classificador de imagens
+
+# --- Ambientes Virtuais ---
+# Ignora a pasta do ambiente virtual, que é específica da sua máquina
+venv/
+.venv/
+env/
+ENV/
+
+# --- Artefatos do Python ---
+# Ignora pastas de cache e arquivos compilados que o Python gera automaticamente
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# --- Dados e Modelos do Projeto (O MAIS IMPORTANTE) ---
+# Ignora as pastas com as imagens, pois são muito grandes para um repositório Git.
+# O código deve ser capaz de gerar o dataset a partir das imagens originais.
+imagens_originais/
+dataset/
+
+# Ignora os modelos treinados e os resultados gerados.
+# Eles são "artefatos" criados pelo seu código e não o código em si.
+modelos_salvos/
+
+# Ignora qualquer imagem de resultado que possa ser salva, como gráficos
+*.png
+*.jpg
+*.jpeg
+
+# --- Configurações de IDE e Editores ---
+# Ignora arquivos de configuração específicos do seu editor de código
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Arquivos de Sistema Operacional ---
+# Ignora arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
