@@ -28,7 +28,7 @@ O modelo foi treinado para identificar e diferenciar as seguintes categorias de 
 
 ### Dataset
 
-O treinamento foi realizado com um dataset customizado contendo **mais de 15.000 imagens** (12.261 para treino e 3.502 para validação), divididas entre as categorias acima. O dataset principal foi obtido do [Kaggle](https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria) (Nota: corrija o link para o seu dataset do Kaggle se for diferente).
+O treinamento foi realizado com um dataset customizado contendo **mais de 15.000 imagens** (12.261 para treino e 3.502 para validação), divididas entre as categorias acima. O dataset principal foi obtido do Kaggle.
 
 ### Desempenho do Classificador
 
@@ -120,7 +120,7 @@ Após preparar o dataset no passo anterior, você pode treinar e avaliar o model
 
 ```bash
 # Treina o classificador e salva os arquivos .joblib
-python treinar_classificador.py
+python train_classifier.py
 
 # Avalia o modelo no conjunto de validação para obter as métricas de desempenho
 python avaliar_modelo.py
@@ -131,7 +131,7 @@ python avaliar_modelo.py
 Com os modelos já treinados e salvos (`classifier_svm.joblib` e `class_labels.joblib`), inicie a interface gráfica.
 
 ```bash
-python visualizador.py
+python visualizador_classificador.py
 ```
 
 ---
